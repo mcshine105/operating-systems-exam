@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Operating Systems Exam</title>
+<link rel="stylesheet" href="style.css">
+<script src="questions.js"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="startContainer">
+  <h1>Operating Systems Examination</h1>
+
+  <label>Enter Student Name:</label><br>
+  <input id="studentName" type="text" placeholder="Full Name"><br><br>
+
+  <label>Enter Section:</label><br>
+  <input id="studentSection" type="text" placeholder="Section"><br><br>
+
+  <button onclick="begin()">Start Exam</button>
+</div>
+
+<div id="examContainer" class="hidden">
+  <h1 id="examTitle"></h1>
+  <div id="questionBox"></div>
+  <div id="timer">30</div>
+</div>
+
+<div id="resultContainer" class="hidden">
+  <h1>Exam Completed</h1>
+  <p id="studentResult"></p>
+  <p>Your result has been submitted automatically.</p>
+</div>
+
+</body>
+</html>
